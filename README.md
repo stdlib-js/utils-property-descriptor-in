@@ -24,32 +24,30 @@ limitations under the License.
 
 > Return a property descriptor for an object's own or inherited property.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-property-descriptor-in
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-propertyDescriptorIn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor-in@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor-in@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.propertyDescriptorIn;
-})();
-</script>
+var propertyDescriptorIn = require( '@stdlib/utils-property-descriptor-in' );
 ```
 
 #### propertyDescriptorIn( obj, property )
@@ -89,14 +87,9 @@ var desc = propertyDescriptorIn( obj, 'a' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor-in@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var defineProperty = require( '@stdlib/utils-define-property' );
+var propertyDescriptorIn = require( '@stdlib/utils-property-descriptor-in' );
 
 function Foo() {
     this.beep = 'boop';
@@ -119,11 +112,6 @@ var desc = propertyDescriptorIn( obj, 'foo' );
 
 console.log( desc );
 // => {'configurable':true,'enumerable':true,'writable':true,'value':['bar']}
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -212,18 +200,19 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/utils-property-descriptor-in/tree/deno
 [umd-url]: https://github.com/stdlib-js/utils-property-descriptor-in/tree/umd
 [esm-url]: https://github.com/stdlib-js/utils-property-descriptor-in/tree/esm
+[branches-url]: https://github.com/stdlib-js/utils-property-descriptor-in/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-property-descriptor-in/main/LICENSE
 
 <!-- <related-links> -->
 
-[@stdlib/assert/has-property]: https://github.com/stdlib-js/assert-has-property/tree/umd
+[@stdlib/assert/has-property]: https://github.com/stdlib-js/assert-has-property
 
-[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property/tree/umd
+[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property
 
-[@stdlib/utils/property-descriptor]: https://github.com/stdlib-js/utils-property-descriptor/tree/umd
+[@stdlib/utils/property-descriptor]: https://github.com/stdlib-js/utils-property-descriptor
 
-[@stdlib/utils/property-descriptors-in]: https://github.com/stdlib-js/utils-property-descriptors-in/tree/umd
+[@stdlib/utils/property-descriptors-in]: https://github.com/stdlib-js/utils-property-descriptors-in
 
 <!-- </related-links> -->
 
