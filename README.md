@@ -24,14 +24,30 @@ limitations under the License.
 
 > Return a property descriptor for an object's own or inherited property.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-property-descriptor-in
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import propertyDescriptorIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor-in@esm/index.mjs';
+var propertyDescriptorIn = require( '@stdlib/utils-property-descriptor-in' );
 ```
 
 #### propertyDescriptorIn( obj, property )
@@ -71,14 +87,9 @@ var desc = propertyDescriptorIn( obj, 'a' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
-import propertyDescriptorIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor-in@esm/index.mjs';
+```javascript
+var defineProperty = require( '@stdlib/utils-define-property' );
+var propertyDescriptorIn = require( '@stdlib/utils-property-descriptor-in' );
 
 function Foo() {
     this.beep = 'boop';
@@ -101,10 +112,6 @@ var desc = propertyDescriptorIn( obj, 'foo' );
 
 console.log( desc );
 // => {'configurable':true,'enumerable':true,'writable':true,'value':['bar']}
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -137,7 +144,7 @@ console.log( desc );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -199,13 +206,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/has-property]: https://github.com/stdlib-js/assert-has-property/tree/esm
+[@stdlib/assert/has-property]: https://github.com/stdlib-js/assert-has-property
 
-[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property/tree/esm
+[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property
 
-[@stdlib/utils/property-descriptor]: https://github.com/stdlib-js/utils-property-descriptor/tree/esm
+[@stdlib/utils/property-descriptor]: https://github.com/stdlib-js/utils-property-descriptor
 
-[@stdlib/utils/property-descriptors-in]: https://github.com/stdlib-js/utils-property-descriptors-in/tree/esm
+[@stdlib/utils/property-descriptors-in]: https://github.com/stdlib-js/utils-property-descriptors-in
 
 <!-- </related-links> -->
 
