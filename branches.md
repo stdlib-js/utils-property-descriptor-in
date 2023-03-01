@@ -38,12 +38,12 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/property-descriptor-in"
-click B href "https://github.com/stdlib-js/utils-property-descriptor-in/tree/main"
-click C href "https://github.com/stdlib-js/utils-property-descriptor-in/tree/production"
-click D href "https://github.com/stdlib-js/utils-property-descriptor-in/tree/esm"
-click E href "https://github.com/stdlib-js/utils-property-descriptor-in/tree/deno"
-click F href "https://github.com/stdlib-js/utils-property-descriptor-in/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/property-descriptor-in"
+%% click B href "https://github.com/stdlib-js/utils-property-descriptor-in/tree/main"
+%% click C href "https://github.com/stdlib-js/utils-property-descriptor-in/tree/production"
+%% click D href "https://github.com/stdlib-js/utils-property-descriptor-in/tree/esm"
+%% click E href "https://github.com/stdlib-js/utils-property-descriptor-in/tree/deno"
+%% click F href "https://github.com/stdlib-js/utils-property-descriptor-in/tree/umd"
 ```
 
 [stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/property-descriptor-in
