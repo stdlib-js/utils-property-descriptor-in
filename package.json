@@ -38,7 +38,8 @@
   },
   "dependencies": {
     "@stdlib/utils-get-prototype-of": "^0.0.7",
-    "@stdlib/utils-property-descriptor": "^0.0.7"
+    "@stdlib/utils-property-descriptor": "^0.0.7",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.2"
   },
   "devDependencies": {
     "@stdlib/assert-has-symbol-support": "^0.0.8",
