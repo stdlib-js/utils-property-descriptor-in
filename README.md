@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import propertyDescriptorIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor-in@esm/index.mjs';
+import propertyDescriptorIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor-in@v0.2.1-esm/index.mjs';
 ```
 
 #### propertyDescriptorIn( obj, property )
@@ -89,7 +89,7 @@ var desc = propertyDescriptorIn( obj, 'a' );
 <script type="module">
 
 import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
-import propertyDescriptorIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor-in@esm/index.mjs';
+import propertyDescriptorIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor-in@v0.2.1-esm/index.mjs';
 
 function Foo() {
     this.beep = 'boop';
