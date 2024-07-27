@@ -44,6 +44,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+propertyDescriptorIn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor-in@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-property-descriptor-in/tags). For example,
+
+```javascript
 propertyDescriptorIn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor-in@v0.2.2-umd/browser.js' )
 ```
 
@@ -56,7 +61,7 @@ var propertyDescriptorIn = require( 'path/to/vendor/umd/utils-property-descripto
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor-in@v0.2.2-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor-in@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -111,7 +116,7 @@ var desc = propertyDescriptorIn( obj, 'a' );
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor-in@v0.2.2-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-descriptor-in@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
